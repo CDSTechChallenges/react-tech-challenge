@@ -5,6 +5,7 @@ export const PostOwnerWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   border-left: 1px solid rgb(239, 239, 239);
+  border-bottom: 1px solid rgb(239, 239, 239);
 `;
 
 export const ProfileImgThumb = styled.img`

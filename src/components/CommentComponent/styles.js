@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const CommentWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  border-left: 1px solid rgb(239, 239, 239);
-  border-top: 1px solid rgb(239, 239, 239);
 `;
 
 export const NameText = styled.div`
