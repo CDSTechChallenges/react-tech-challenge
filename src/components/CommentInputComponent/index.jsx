@@ -1,8 +1,9 @@
 function CommentInputComponent() {
   return (
     <>
+      <div>Needed input</div>
     </>
-  )
+  );
 }
 
-export default CommentInputComponent
+export default CommentInputComponent;

@@ -1,18 +1,17 @@
-import PropTypes from 'prop-types'
-
-function LikeCounterComponent({ postData }) {
-  const { likes, date } = postData
-  
+import PropTypes from "prop-types";
+import { LikeCounterWrapper } from "./styles";
+function LikeCounterComponent({ likes, date }) {
   return (
-    <>
+    <LikeCounterWrapper>
       <div>{likes} Likes</div>
       <div>{date}</div>
-    </>
-  )
+    </LikeCounterWrapper>
+  );
 }
 
 LikeCounterComponent.propTypes = {
-  postData: PropTypes.object
-}
+  likes: PropTypes.number,
+  date: PropTypes.string,
+};
 
-export default LikeCounterComponent
+export default LikeCounterComponent;

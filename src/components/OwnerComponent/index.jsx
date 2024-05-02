@@ -1,18 +1,18 @@
-import PropTypes from 'prop-types'
-
+import PropTypes from "prop-types";
+import { PostOwnerWrapper, ProfileImgThumb, ProfileNameText } from "./styles";
 function OwnerComponent({ userData }) {
-  const { profilePicture, name } = userData
+  const { profilePicture, name } = userData;
 
   return (
-    <>
-      <img href={profilePicture}></img>
-      <div>{name}</div>
-    </>
-  )
+    <PostOwnerWrapper>
+      <ProfileImgThumb src={profilePicture}></ProfileImgThumb>
+      <ProfileNameText>{name}</ProfileNameText>
+    </PostOwnerWrapper>
+  );
 }
 
 OwnerComponent.propTypes = {
-  userData: PropTypes.object
-}
+  userData: PropTypes.object,
+};
 
-export default OwnerComponent
+export default OwnerComponent;

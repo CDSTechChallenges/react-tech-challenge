@@ -1,14 +1,19 @@
-import PropTypes from 'prop-types'
-import CommentComponent from "../CommentComponent"
+import PropTypes from "prop-types";
+import CommentComponent from "../CommentComponent";
+import { CommentSectionWrapper } from "./styles";
 
 function CommentSectionComponent({ comments }) {
   return (
-    comments.map(c => <CommentComponent key={c.id} comment={c} />)
-  )
+    <CommentSectionWrapper>
+      {comments.map((c) => (
+        <CommentComponent key={c.id} comment={c} />
+      ))}
+    </CommentSectionWrapper>
+  );
 }
 
 CommentSectionComponent.propTypes = {
-  postData: PropTypes.array
-}
+  comments: PropTypes.array,
+};
 
-export default CommentSectionComponent
+export default CommentSectionComponent;

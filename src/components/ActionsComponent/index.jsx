@@ -1,20 +1,21 @@
-import PropTypes from 'prop-types'
-import ActionBarComponent from "../ActionBarComponent"
-import LikeCounterComponent from "../LikeCounterComponent"
-import CommentInputComponent from "../CommentInputComponent"
+import PropTypes from "prop-types";
+import ActionBarComponent from "../ActionBarComponent";
+import LikeCounterComponent from "../LikeCounterComponent";
+import CommentInputComponent from "../CommentInputComponent";
 
-function ActionsComponent({ postData }) {
+function ActionsComponent({ likes, date }) {
   return (
     <>
       <ActionBarComponent />
-      <LikeCounterComponent postData={postData} />
+      <LikeCounterComponent likes={likes} date={date} />
       <CommentInputComponent />
     </>
-  )
+  );
 }
 
 ActionsComponent.propTypes = {
-  postData: PropTypes.object
-}
+  likes: PropTypes.number,
+  date: PropTypes.string,
+};
 
-export default ActionsComponent
+export default ActionsComponent;
