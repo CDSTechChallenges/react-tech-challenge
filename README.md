@@ -1,8 +1,15 @@
-# React + Vite
+# Welcome to CodigoDelSur React tech challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To set up the app you will need Node 18 on your environment
 
-Currently, two official plugins are available:
+Run `npm install`
+Run `npm run start dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In your browser you should be able to access the app using http://localhost:5173
+
+There are other URLS available on this app:
+
+- http://localhost:5173/feed
+- http://localhost:5173/post/{postId}
+
+The app includes a data file with some mock data. You can find it under `src/data/posts.js`
