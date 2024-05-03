@@ -1,9 +1,11 @@
 # Welcome to CodigoDelSur React tech challenge
 
-To set up the app you will need Node 18 on your environment
+To set up the app you will need Node 18 on your environment.
 
-Run `npm install`
-Run `npm run start dev`
+## Setup instructions
+
+- Run `npm install`
+- Run `npm run dev`
 
 In your browser you should be able to access the app using http://localhost:5173
 
