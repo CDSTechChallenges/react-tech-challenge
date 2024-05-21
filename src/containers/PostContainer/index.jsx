@@ -9,10 +9,8 @@ import { PostWrapper } from "./styles";
 
 function PostContainer() {
   const { postId } = useParams();
-  console.log(postId);
   const posts = useContext(PostContext);
   const postData = posts.find((p) => p.id === postId);
-  console.log(postData);
 
   return (
     <PostWrapper>
